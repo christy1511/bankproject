@@ -22,8 +22,8 @@ public class BankController {
 	BankService bankSer;
 	
 	@PostMapping(value = "/addbank")
-	public String addBank(@RequestBody Bank b) {
-		return bankSer.addBank(b);
+	public String addBank(@RequestBody Bank c) {
+		return bankSer.addBank(c);
 	}
 	@GetMapping(value = "/getbank/{id}")
 	public Bank getBankById(@PathVariable int id) {
